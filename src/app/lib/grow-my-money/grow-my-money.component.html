@@ -1,3 +1,5 @@
 <p>
-  grow-my-money works!
+  <sbg-client-name [client]="client$ | async"></sbg-client-name>
+  <button (click)="setClient()">Set client</button>
+  <button (click)="unsetClient()">Unset client</button>
 </p>
