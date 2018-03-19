@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-grow-my-money',
+  selector: 'sbg-grow-my-money',
   templateUrl: './grow-my-money.component.html',
   styleUrls: ['./grow-my-money.component.scss']
 })
