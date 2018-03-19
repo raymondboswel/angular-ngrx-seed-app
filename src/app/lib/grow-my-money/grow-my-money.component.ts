@@ -7,7 +7,8 @@ import {
   UnsetClientAction
 } from './client-reactive/client-actions';
 import { Observable } from 'rxjs/Observable';
-import { client } from './client-reactive/client-reducer';
+import { clientSelector } from './client-reactive/client-reducer';
+import { ClientService } from './client-reactive/client.service';
 
 @Component({
   selector: 'sbg-grow-my-money',
@@ -17,18 +18,18 @@ import { client } from './client-reactive/client-reducer';
 export class GrowMyMoneyComponent implements OnInit {
   public client$: Observable<Client> = null;
 
-  constructor(public store: Store<AppState>) {}
+  constructor(public clientService: ClientService) {}
 
   ngOnInit() {
-    this.client$ = this.store.select(client);
+    this.client$ = this.clientService.getClient();
   }
 
   setClient() {
     const newClient = new Client('Raymond', 'Boswel');
-    const setClientAction = this.store.dispatch(new SetClientAction(newClient));
+    this.clientService.setClient(newClient);
   }
 
   unsetClient() {
-    const setClientAction = this.store.dispatch(new UnsetClientAction());
+    this.clientService.unsetClient();
   }
 }

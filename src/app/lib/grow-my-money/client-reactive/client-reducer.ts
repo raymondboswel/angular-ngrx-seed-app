@@ -38,6 +38,6 @@ export const getClientState = createFeatureSelector<ClientReducerState>(
   'clientReducer'
 );
 
-export const client = createSelector(getClientState, clientState => {
+export const clientSelector = createSelector(getClientState, clientState => {
   return clientState.clientReducer.client;
 });
