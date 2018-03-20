@@ -1,8 +1,8 @@
+import { ClientReducerState } from './../client-reactive.module';
 import { RequestClientAction } from '../actions/client-request.actions';
 import { Observable } from 'rxjs/Observable';
 import { Injectable } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { AppState } from '../../../../app-reducer';
 import { Client } from '../models/client.model';
 import { clientSelector } from '../reducer/client.reducer';
 import {
@@ -12,7 +12,7 @@ import {
 
 @Injectable()
 export class ClientService {
-  constructor(public store: Store<AppState>) {}
+  constructor(public store: Store<ClientReducerState>) {}
 
   public getClient(): Observable<Client> {
     return this.store.select(clientSelector);

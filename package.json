@@ -8,7 +8,8 @@
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "packagr": "ng-packagr -p ./src/app/lib/ng-package.json"
   },
   "private": true,
   "dependencies": {
@@ -79,6 +80,7 @@
     "karma-jasmine-html-reporter": "^0.2.2",
     "ngrx-store-freeze": "^0.2.0",
     "ngrx-store-logger": "^0.2.0",
+    "ng-packagr": "^2.1.0",
     "prettier": "1.10.2",
     "pretty-quick": "^1.4.1",
     "protractor": "^5.2.5",

@@ -1,4 +1,3 @@
-import { AppState } from './../../app-reducer';
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Client } from './client-reactive/models/client.model';

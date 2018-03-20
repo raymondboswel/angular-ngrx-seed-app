@@ -5,7 +5,6 @@ import { ClientService } from './client.service';
 import { Observable } from 'rxjs/Observable';
 import { Client } from '../models/client.model';
 import { StoreModule, combineReducers, Store } from '@ngrx/store';
-import { appReducers } from '../../../../app-reducer';
 import {
   clientReducer,
   ClientState,
@@ -25,7 +24,6 @@ describe('ClientService', () => {
     TestBed.configureTestingModule({
       imports: [
         StoreModule.forRoot({
-          appReducers,
           clientReducer: combineReducers(clientFeatureReducers)
         })
       ],
