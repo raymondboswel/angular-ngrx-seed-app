@@ -2,12 +2,8 @@ import { AppState } from './../../app-reducer';
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Client } from './client-reactive/models/client.model';
-import {
-  SetClientAction,
-  UnsetClientAction
-} from './client-reactive/client-actions';
+
 import { Observable } from 'rxjs/Observable';
-import { clientSelector } from './client-reactive/client-reducer';
 import { ClientService } from './client-reactive/client.service';
 
 @Component({

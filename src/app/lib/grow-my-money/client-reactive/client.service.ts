@@ -3,8 +3,11 @@ import { Injectable } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { AppState } from '../../../app-reducer';
 import { Client } from './models/client.model';
-import { clientSelector } from './client-reducer';
-import { SetClientAction, UnsetClientAction } from './client-actions';
+import { clientSelector } from './client.reducer';
+import {
+  SetClientAction,
+  UnsetClientAction
+} from './actions/client-set.actions';
 
 @Injectable()
 export class ClientService {
