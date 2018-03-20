@@ -1,6 +1,6 @@
 import { Observable } from 'rxjs/Observable';
 import { Injectable } from '@angular/core';
-import { Client } from './models/client.model';
+import { Client } from '../models/client.model';
 import 'rxjs/add/observable/of';
 
 @Injectable()

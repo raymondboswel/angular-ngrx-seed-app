@@ -1,10 +1,10 @@
-import { Client } from './models/client.model';
+import { Client } from '../models/client.model';
 // counter.ts
 import { Action, createFeatureSelector, createSelector } from '@ngrx/store';
-import { ClientActions } from './actions/client.actions';
-import { ClientReducerState } from './client-reactive.module';
-import { ClientSetActionTypes } from './actions/client-set.actions';
-import { ClientRequestActionTypes } from './actions/client-request.actions';
+import { ClientActions } from '../actions/client.actions';
+import { ClientReducerState } from '../client-reactive.module';
+import { ClientSetActionTypes } from '../actions/client-set.actions';
+import { ClientRequestActionTypes } from '../actions/client-request.actions';
 
 export interface ClientState {
   client: Client;

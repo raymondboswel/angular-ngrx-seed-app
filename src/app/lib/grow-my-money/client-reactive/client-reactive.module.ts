@@ -1,11 +1,11 @@
-import { ClientEffects } from './client.effects';
+import { ClientEffects } from './effects/client.effects';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActionReducerMap, StoreModule } from '@ngrx/store';
-import { clientReducer, ClientState } from './client.reducer';
-import { ClientService } from './client.service';
+import { clientReducer, ClientState } from './reducer/client.reducer';
+import { ClientService } from './service/client.service';
 import { EffectsModule } from '@ngrx/effects';
-import { ClientApiService } from './client.api.service';
+import { ClientApiService } from './api/client.api.service';
 
 export const reducers: ActionReducerMap<any> = {
   clientReducer: clientReducer

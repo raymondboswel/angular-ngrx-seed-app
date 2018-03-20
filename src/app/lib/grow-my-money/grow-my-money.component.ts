@@ -4,7 +4,7 @@ import { Store } from '@ngrx/store';
 import { Client } from './client-reactive/models/client.model';
 
 import { Observable } from 'rxjs/Observable';
-import { ClientService } from './client-reactive/client.service';
+import { ClientService } from './client-reactive/service/client.service';
 
 @Component({
   selector: 'sbg-grow-my-money',

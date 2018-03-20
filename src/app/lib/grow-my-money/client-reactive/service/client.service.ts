@@ -1,14 +1,14 @@
-import { RequestClientAction } from './actions/client-request.actions';
+import { RequestClientAction } from '../actions/client-request.actions';
 import { Observable } from 'rxjs/Observable';
 import { Injectable } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { AppState } from '../../../app-reducer';
-import { Client } from './models/client.model';
-import { clientSelector } from './client.reducer';
+import { AppState } from '../../../../app-reducer';
+import { Client } from '../models/client.model';
+import { clientSelector } from '../reducer/client.reducer';
 import {
   SetClientAction,
   UnsetClientAction
-} from './actions/client-set.actions';
+} from '../actions/client-set.actions';
 
 @Injectable()
 export class ClientService {

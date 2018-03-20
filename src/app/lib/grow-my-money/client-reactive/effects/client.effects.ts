@@ -1,7 +1,7 @@
 import {
   RequestClientAction,
   RequestClientSuccessAction
-} from './actions/client-request.actions';
+} from '../actions/client-request.actions';
 /**
  * The Goal Setter Client Effects
  */
@@ -13,13 +13,13 @@ import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/map';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/switchMap';
-import { ClientApiService } from './client.api.service';
+import { ClientApiService } from '../api/client.api.service';
 import {
   ClientRequestActionTypes,
   RequestClientFailedAction
-} from './actions/client-request.actions';
-import { Client } from './models/client.model';
-import { mapToAction } from '../utils/reactive/map-to-action';
+} from '../actions/client-request.actions';
+import { Client } from '../models/client.model';
+import { mapToAction } from '../../utils/reactive/map-to-action';
 
 @Injectable()
 export class ClientEffects {
