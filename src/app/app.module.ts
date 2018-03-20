@@ -1,3 +1,4 @@
+import { EffectsModule } from '@ngrx/effects';
 import { GrowMyMoneyModule } from './lib/grow-my-money/grow-my-money.module';
 import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
@@ -32,6 +33,7 @@ export const metaReducers = [ngrxStoreLogger, stateSetter];
     BrowserModule,
     appRoutingModule,
     StoreModule.forRoot(appReducers, { metaReducers }),
+    EffectsModule.forRoot([]),
     StoreRouterConnectingModule,
     GrowMyMoneyModule
   ],

@@ -28,4 +28,8 @@ export class GrowMyMoneyComponent implements OnInit {
   unsetClient() {
     this.clientService.unsetClient();
   }
+
+  requestClient() {
+    this.clientService.requestClient();
+  }
 }

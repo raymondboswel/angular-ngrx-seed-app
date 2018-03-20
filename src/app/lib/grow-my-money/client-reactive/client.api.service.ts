@@ -8,7 +8,7 @@ export class ClientApiService {
   constructor() {}
 
   getClient(clientSAId: string): Observable<Client> {
-    const client = new Client('Raymond', 'Boswel');
+    const client = new Client('Raymond', 'Remote');
     return Observable.of(client);
   }
 }

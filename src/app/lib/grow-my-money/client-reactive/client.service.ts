@@ -1,3 +1,4 @@
+import { RequestClientAction } from './actions/client-request.actions';
 import { Observable } from 'rxjs/Observable';
 import { Injectable } from '@angular/core';
 import { Store } from '@ngrx/store';
@@ -23,5 +24,9 @@ export class ClientService {
 
   public unsetClient(): void {
     this.store.dispatch(new UnsetClientAction());
+  }
+
+  public requestClient(): void {
+    this.store.dispatch(new RequestClientAction('id number'));
   }
 }
