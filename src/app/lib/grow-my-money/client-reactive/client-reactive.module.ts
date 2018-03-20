@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActionReducerMap, StoreModule } from '@ngrx/store';
-import { clientReducer, ClientState } from './client-reducer';
+import { clientReducer, ClientState } from './client.reducer';
 import { ClientService } from './client.service';
 
 export const reducers: ActionReducerMap<any> = {
