@@ -27,7 +27,7 @@ export function getActions() {
   return new TestActions();
 }
 
-fdescribe('ClientEffects', () => {
+describe('ClientEffects', () => {
   let effects: ClientEffects;
   let clientApiService: any;
   let actions$: TestActions;

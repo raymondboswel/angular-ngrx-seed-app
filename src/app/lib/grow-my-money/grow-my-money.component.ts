@@ -30,6 +30,6 @@ export class GrowMyMoneyComponent implements OnInit {
   }
 
   requestClient() {
-    this.clientService.requestClient();
+    this.clientService.requestClient('123');
   }
 }

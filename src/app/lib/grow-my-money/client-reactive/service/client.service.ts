@@ -26,7 +26,7 @@ export class ClientService {
     this.store.dispatch(new UnsetClientAction());
   }
 
-  public requestClient(): void {
-    this.store.dispatch(new RequestClientAction('id number'));
+  public requestClient(idNumber: string): void {
+    this.store.dispatch(new RequestClientAction(idNumber));
   }
 }

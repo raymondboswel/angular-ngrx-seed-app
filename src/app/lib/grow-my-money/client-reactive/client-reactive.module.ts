@@ -7,7 +7,7 @@ import { ClientService } from './service/client.service';
 import { EffectsModule } from '@ngrx/effects';
 import { ClientApiService } from './api/client.api.service';
 
-export const reducers: ActionReducerMap<any> = {
+export const clientFeatureReducers: ActionReducerMap<any> = {
   clientReducer: clientReducer
 };
 
@@ -18,7 +18,7 @@ export interface ClientReducerState {
 @NgModule({
   imports: [
     CommonModule,
-    StoreModule.forFeature('clientReducer', reducers),
+    StoreModule.forFeature('clientReducer', clientFeatureReducers),
     EffectsModule.forFeature([ClientEffects])
   ],
   declarations: [],
