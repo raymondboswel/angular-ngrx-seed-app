@@ -10,12 +10,12 @@ export interface ClientState {
   client: Client;
 }
 
-export const initialState: ClientState = {
+export const clientReducerInitialState: ClientState = {
   client: new Client('Initial', 'client')
 };
 
 export function clientReducer(
-  state: ClientState = initialState,
+  state: ClientState = clientReducerInitialState,
   action: ClientActions
 ) {
   switch (action.type) {

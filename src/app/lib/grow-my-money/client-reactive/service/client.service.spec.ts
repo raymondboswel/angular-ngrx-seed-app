@@ -1,3 +1,4 @@
+import { clientReducerInitialState } from './../reducer/client.reducer';
 import { TestBed, inject } from '@angular/core/testing';
 
 import { ClientService } from './client.service';
@@ -7,7 +8,6 @@ import { StoreModule, combineReducers, Store } from '@ngrx/store';
 import { appReducers } from '../../../../app-reducer';
 import {
   clientReducer,
-  initialState,
   ClientState,
   clientSelector
 } from '../reducer/client.reducer';
@@ -18,7 +18,7 @@ import {
 } from '../actions/client-set.actions';
 import { RequestClientAction } from '../actions/client-request.actions';
 
-fdescribe('ClientService', () => {
+describe('ClientService', () => {
   let store: Store<ClientState>;
 
   beforeEach(() => {
@@ -50,7 +50,7 @@ fdescribe('ClientService', () => {
       service.getClient().subscribe(client => {
         result = client;
       });
-      expect(result).toEqual(initialState.client);
+      expect(result).toEqual(clientReducerInitialState.client);
     })
   );
 
