@@ -10,7 +10,7 @@ import { appReducers } from '../../../../app-reducer';
 import { clientFeatureReducers } from '../client-reactive.module';
 import { Client } from '../models/client.model';
 
-fdescribe('ClientReducer', () => {
+describe('ClientReducer', () => {
   let store: Store<ClientState>;
 
   beforeEach(() => {
