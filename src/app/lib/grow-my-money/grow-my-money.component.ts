@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { Client } from './client-reactive/models/client.model';
 
 import { Observable } from 'rxjs/Observable';
-import { ClientService } from './client-reactive/service/client.service';
 
 @Component({
   selector: 'sbg-grow-my-money',
@@ -11,24 +9,7 @@ import { ClientService } from './client-reactive/service/client.service';
   styleUrls: ['./grow-my-money.component.scss']
 })
 export class GrowMyMoneyComponent implements OnInit {
-  public client$: Observable<Client> = null;
+  constructor() {}
 
-  constructor(public clientService: ClientService) {}
-
-  ngOnInit() {
-    this.client$ = this.clientService.getClient();
-  }
-
-  setClient() {
-    const newClient = new Client('Raymond', 'Boswel');
-    this.clientService.setClient(newClient);
-  }
-
-  unsetClient() {
-    this.clientService.unsetClient();
-  }
-
-  requestClient() {
-    this.clientService.requestClient('123');
-  }
+  ngOnInit() {}
 }
