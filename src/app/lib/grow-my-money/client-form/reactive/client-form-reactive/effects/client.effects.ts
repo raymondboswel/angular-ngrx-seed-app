@@ -19,7 +19,7 @@ import {
   RequestClientFailedAction
 } from '../actions/client-request.actions';
 import { Client } from '../models/client.model';
-import { mapToAction } from '../../../utils/reactive/map-to-action';
+import { mapToAction } from '../../../../utils/reactive/map-to-action';
 
 @Injectable()
 export class ClientEffects {

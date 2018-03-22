@@ -1,4 +1,4 @@
-import { Client } from '../../client-form-reactive/models/client.model';
+import { Client } from '../../reactive/client-form-reactive/models/client.model';
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({

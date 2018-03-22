@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-import { Client } from '../../client-form-reactive/models/client.model';
-import { ClientService } from '../../client-form-reactive/service/client.service';
+import { Client } from '../../reactive/client-form-reactive/models/client.model';
+import { ClientService } from '../../reactive/client-form-reactive/service/client.service';
 import { NavigationService } from '../../../navigation-reactive/navigation.service';
 
 @Component({

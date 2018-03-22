@@ -2,7 +2,7 @@ import { ClientFormContainerComponent } from './container/client-form-container/
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ClientNameComponent } from './components/client-name/client-name.component';
-import { ClientReactiveModule } from './client-form-reactive/client-reactive.module';
+import { ClientReactiveModule } from './reactive/client-form-reactive/client-reactive.module';
 
 @NgModule({
   imports: [CommonModule, ClientReactiveModule],
