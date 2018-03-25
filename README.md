@@ -1,6 +1,6 @@
-# GrowMyMoney
+# Angular NgRx Seed App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.1.
+I've created this project as a starter project with some basic features as examples, and some niceties such as prettier and HMR (to be added shortly) to aid development.
 
 ## Development server
 
