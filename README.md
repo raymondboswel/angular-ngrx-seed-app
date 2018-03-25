@@ -1,6 +1,6 @@
 # Angular NgRx Seed App
 
-I've created this project as a starter project with some basic features as examples, and some niceties such as prettier and HMR (to be added shortly) to aid development.
+I've created this project as a starter project with some basic features as examples, and some niceties such as prettier and HMR (to be added shortly) to aid development. The application is also geared to enable every feature module to be packaged using ng-packagr.
 
 ## Development server
 
